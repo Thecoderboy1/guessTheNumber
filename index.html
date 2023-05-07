@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="alertBox.css">
+</head>
+
+<body>
+    <main>
+        <div class="content" id="content">
+            <h2>Guess The Number!</h2>
+
+            <div class="header"> <span id="score"> score: 0</span>
+                <span id="lifeline">Lifeline: 0</span>
+            </div>
+            <div class="mainArea">
+                <input type="number" placeholder="Guess Correct!">
+                <button id="btn" onclick="startGame()">Check</button>
+                <span id="AnswerDisplay">Output: </span>
+                <span id="hint">Hint</span>
+            </div>
+
+        </div>
+        <div class="maingameWindow" id="gameWindow">
+            <img src="hmm-thinking.gif" alt="thinking man">
+            <h2>Guess The Number</h2>
+            <div class="btn"><span id="playBtn">Play Now</span></div>
+            
+        </div>
+        <div class="modal" id="model">
+            <strong id="modleMsg">your message is here</strong>
+            <div class="btns">
+                <span id="modelBtn">Ok</span>
+            </div>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
